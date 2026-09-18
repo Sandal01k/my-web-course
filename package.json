@@ -1,0 +1,24 @@
+{
+  "name": "my-web-course",
+  "version": "1.0.0",
+  "description": "Виконано дз01\r Виконано дз02\r Виконано дз03",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sandal01k/my-web-course.git"
+  },
+  "keywords": [],
+  "author": "Oleksandr Dombrovskyi",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Sandal01k/my-web-course/issues"
+  },
+  "homepage": "https://github.com/Sandal01k/my-web-course#readme",
+  "devDependencies": {
+    "prettier": "^3.9.8"
+  }
+}
