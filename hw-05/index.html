@@ -109,7 +109,28 @@
           </tfoot>
         </table>
       </section>
-      <section id="subscription"></section>
+      <section id="subscription">
+        <h2>Підписка на SoulLib</h2>
+        <p>
+          Підписка на SoulLib відкриває доступ до всіх наших ігор та
+          ексклюзивних матеріалів. Оберіть тарифний план, який найкраще
+          відповідає вашим потребам, та насолоджуйтеся безмежними можливостями у
+          світі souls-like ігор.
+        </p>
+        <form>
+          <label for="name">Ім'я:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Електронна пошта:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="plan">Оберіть тарифний план:</label>
+          <select id="plan" name="plan" required>
+            <option value="" disabled selected>Оберіть тарифний план</option>
+            <option value="basic">Базовий</option>
+            <option value="standard">Стандартний</option>
+            <option value="premium">Преміум</option>
+          </select>
+        </form>
+      </section>
     </main>
     <footer></footer>
   </body>
