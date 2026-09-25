@@ -14,7 +14,7 @@
           <li><a href="#features">Що всередині</a></li>
           <li><a href="#catalog">Каталог</a></li>
           <li><a href="#pricing">Ціни</a></li>
-          <li><a href="#subscription">Підписка</a></li>
+          <li><a href="#order">Замовлення</a></li>
           <li><a href="#faq">Часті запитання</a></li>
         </ul>
       </nav>
@@ -54,7 +54,7 @@
         <ol>
           <li>Оберіть гру з каталогу</li>
           <li>Виберіть необхідний формат гайда</li>
-          <li>Отримайте доступ до матеріалів</li>
+          <li>Отримайте обрані матеріали на email</li>
         </ol>
       </section>
       <section id="catalog">
@@ -112,15 +112,13 @@
           </tfoot>
         </table>
       </section>
-      <section id="subscription">
-        <h2>Підписка на SoulLib</h2>
+      <section id="order">
+        <h2>Замовити гайд</h2>
         <p>
-          Підписка на SoulLib відкриває доступ до усіх ігор з каталогу на час її
-          дії.<br />
-          Пройдіть реєстрацію, оберіть тарифний план, який найкраще відповідає
-          вашим потребам та насолоджуйтеся ігровим досвідом.
+          Оберіть гру з каталогу, формат гайда та спосіб оплати. Після
+          оформлення гайд буде надіслано на вказану електронну пошту.
         </p>
-        <form action="/register" method="post">
+        <form action="/order" method="post">
           <p>
             <label for="name">Ім'я:</label>
             <input
@@ -152,14 +150,47 @@
             />
           </p>
           <p>
-            <label for="plan">Оберіть тарифний план:</label>
-            <select id="plan" name="plan" required>
-              <option value="" disabled selected>Оберіть тарифний план</option>
+            <label for="game">Оберіть гру:</label>
+            <select id="game" name="game" required>
+              <option value="" disabled selected>Оберіть гру</option>
+              <option value="mortal-shell">Mortal Shell</option>
+              <option value="mortal-shell-2">Mortal Shell 2</option>
+              <option value="elden-ring">Elden Ring</option>
+              <option value="the-surge">The Surge</option>
+              <option value="the-surge-2">The Surge 2</option>
+              <option value="lords-of-the-fallen">Lords of the Fallen</option>
+              <option value="dark-souls">Dark Souls</option>
+              <option value="dark-souls-2">Dark Souls 2</option>
+              <option value="dark-souls-3">Dark Souls 3</option>
+              <option value="bloodborne">Bloodborne</option>
+              <option value="enotria-the-last-song">
+                Enotria: The Last Song
+              </option>
+              <option value="sekiro-shadows-die-twice">
+                Sekiro: Shadows Die Twice
+              </option>
+            </select>
+          </p>
+          <p>
+            <label for="format">Оберіть формат гайда:</label>
+            <select id="format" name="format" required>
+              <option value="" disabled selected>Оберіть формат гайда</option>
               <option value="basic">Базовий</option>
-              <option value="standard">Стандартний</option>
+              <option value="standard">Стандарт</option>
               <option value="premium">Преміум</option>
             </select>
           </p>
+          <fieldset>
+            <legend>Оберіть спосіб сповіщення:</legend>
+            <label>
+              <input type="radio" name="notification" value="email" required />
+              Електронна пошта
+            </label>
+            <label>
+              <input type="radio" name="notification" value="sms" />
+              SMS-повідомлення
+            </label>
+          </fieldset>
           <fieldset>
             <legend>Оберіть спосіб оплати:</legend>
             <label>
@@ -186,7 +217,7 @@
             </label>
           </p>
           <p>
-            <label for="comments">Додаткові коментарі: </label>
+            <label for="comments">Додаткові коментарі:</label>
             <textarea
               id="comments"
               name="comments"
