@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SoulLib</title>
+  </head>
+  <body>
+    <header>
+      <p>SoulLib</p>
+      <nav>
+        <ul>
+          <li><a href="#home">Головна</a></li>
+          <li><a href="#features">Що всередині</a></li>
+          <li><a href="#catalog">Каталог</a></li>
+          <li><a href="#pricing">Ціни</a></li>
+          <li><a href="#order">Замовити гайд</a></li>
+          <li><a href="#faq">Часті запитання</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="home">
+        <h1>SoulLib</h1>
+        <p>
+          SoulLib - це бібліотека гайдів для найпопулярніших<sup>*</sup>
+          souls-like ігор. Отримуйте детальні проходження, поради щодо босів,
+          білди та пояснення ігрових механік в одному місці.
+        </p>
+        <p>
+          <em
+            ><sup>*</sup> Каталог формується на основі популярності ігор та
+            актуальних даних ігрової спільноти.</em
+          >
+        </p>
+        <p>
+          <img
+            src="images/art_soullib.webp"
+            alt="Арт-зображення рицаря у темних обладунках, що стоїть на скелі з мечем у руці, дивлячись на схід сонця"
+            height="200"
+          />
+        </p>
+        <a href="#catalog">Переглянути ігри в каталозі</a>
+      </section>
+      <section id="features">
+        <h2>Що всередині</h2>
+        <ul>
+          <li>Каталог популярних souls-like ігор</li>
+          <li>Гайди на проходження основного сюжету</li>
+          <li>Гайди на проходження побічних завдань</li>
+          <li>Рекомендації щодо найефективніших білдів</li>
+        </ul>
+        <h3>Як почати</h3>
+        <ol>
+          <li>Оберіть гру з каталогу</li>
+          <li>Виберіть необхідний формат гайда</li>
+          <li>Отримайте обраний гайд на email</li>
+        </ol>
+      </section>
+      <section id="catalog">
+        <h2>Ігри в каталозі</h2>
+        <ul>
+          <li>Mortal Shell</li>
+          <li>Mortal Shell 2</li>
+          <li>Elden Ring</li>
+          <li>The Surge</li>
+          <li>The Surge 2</li>
+          <li>Lords of the Fallen</li>
+          <li>Dark Souls</li>
+          <li>Dark Souls 2</li>
+          <li>Dark Souls 3</li>
+          <li>Bloodborne</li>
+          <li>Enotria: The Last Song</li>
+          <li>Sekiro: Shadows Die Twice</li>
+        </ul>
+      </section>
+      <section id="pricing">
+        <h2>Ціни</h2>
+        <p>Оберіть формат гайда для гри з каталогу.</p>
+        <table>
+          <caption>
+            Формати гайдів
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Формат</th>
+              <th scope="col">Вміст</th>
+              <th scope="col">Ціна</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Базовий</th>
+              <td>Гайд за основним сюжетом гри</td>
+              <td>$1.99</td>
+            </tr>
+            <tr>
+              <th scope="row">Стандарт</th>
+              <td>Сюжет гри + сайд-квести</td>
+              <td>$2.99</td>
+            </tr>
+            <tr>
+              <th scope="row">Преміум</th>
+              <td>Сюжет + сайд-квести + найефективніші білди</td>
+              <td>$3.99</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">Разова оплата, гайд надсилається на email.</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+      <section id="order">
+        <h2>Замовити гайд</h2>
+        <p>
+          Оберіть гру з каталогу, формат гайда та спосіб оплати. Після
+          оформлення гайд буде надіслано на вказану електронну пошту.
+        </p>
+        <form action="/order" method="post">
+          <p>
+            <label for="name">Ім'я:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Петро Сагайдачний"
+            />
+          </p>
+          <p>
+            <label for="email">Електронна пошта:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="your.email@example.com"
+            />
+          </p>
+          <p>
+            <label for="phone">Телефон:</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              required
+              placeholder="+380 12 345 67 89"
+            />
+          </p>
+          <p>
+            <label for="game">Оберіть гру:</label>
+            <select id="game" name="game" required>
+              <option value="" disabled selected>Оберіть гру</option>
+              <option value="mortal-shell">Mortal Shell</option>
+              <option value="mortal-shell-2">Mortal Shell 2</option>
+              <option value="elden-ring">Elden Ring</option>
+              <option value="the-surge">The Surge</option>
+              <option value="the-surge-2">The Surge 2</option>
+              <option value="lords-of-the-fallen">Lords of the Fallen</option>
+              <option value="dark-souls">Dark Souls</option>
+              <option value="dark-souls-2">Dark Souls 2</option>
+              <option value="dark-souls-3">Dark Souls 3</option>
+              <option value="bloodborne">Bloodborne</option>
+              <option value="enotria-the-last-song">
+                Enotria: The Last Song
+              </option>
+              <option value="sekiro-shadows-die-twice">
+                Sekiro: Shadows Die Twice
+              </option>
+            </select>
+          </p>
+          <p>
+            <label for="format">Оберіть формат гайда:</label>
+            <select id="format" name="format" required>
+              <option value="" disabled selected>Оберіть формат гайда</option>
+              <option value="basic">Базовий</option>
+              <option value="standard">Стандарт</option>
+              <option value="premium">Преміум</option>
+            </select>
+          </p>
+          <fieldset>
+            <legend>Оберіть спосіб сповіщення:</legend>
+            <label>
+              <input type="radio" name="notification" value="email" required />
+              Електронна пошта
+            </label>
+            <label>
+              <input type="radio" name="notification" value="sms" />
+              SMS-повідомлення
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Оберіть спосіб оплати:</legend>
+            <label>
+              <input type="radio" name="payment" value="credit_card" required />
+              Банківська картка
+            </label>
+            <label>
+              <input type="radio" name="payment" value="monopay" />
+              MonoPay
+            </label>
+            <label>
+              <input type="radio" name="payment" value="paypal" />
+              PayPal
+            </label>
+            <label>
+              <input type="radio" name="payment" value="crypto" />
+              Криптовалюта
+            </label>
+          </fieldset>
+          <p>
+            <label>
+              <input type="checkbox" name="terms" required />
+              Я погоджуюсь з умовами надання послуг.
+            </label>
+          </p>
+          <p>
+            <label for="comments">Додаткові коментарі:</label>
+            <textarea
+              id="comments"
+              name="comments"
+              rows="4"
+              placeholder="Знаєте, як покращити наш сервіс? Напишіть нам!"
+            ></textarea>
+          </p>
+          <div>
+            <button type="submit">Перейти до оплати</button>
+            <button type="reset">Очистити форму</button>
+          </div>
+        </form>
+      </section>
+      <section id="faq">
+        <h2>Часті запитання</h2>
+
+        <details>
+          <summary>Що таке SoulLib?</summary>
+          <p>
+            SoulLib — це бібліотека гайдів для souls-like ігор. Тут можна знайти
+            проходження сюжетів, побічних завдань, поради щодо босів та
+            рекомендації щодо білдів.
+          </p>
+        </details>
+
+        <details>
+          <summary>Що входить до гайда?</summary>
+          <p>
+            Залежно від обраного формату гайд може містити проходження основного
+            сюжету, побічних завдань та рекомендації щодо найефективніших
+            білдів.
+          </p>
+        </details>
+
+        <details>
+          <summary>Які формати гайдів доступні?</summary>
+          <p>
+            Доступні три формати: Базовий містить проходження основного сюжету,
+            Стандарт — сюжет і побічні завдання, а Преміум додатково містить
+            рекомендації щодо найефективніших білдів.
+          </p>
+        </details>
+
+        <details>
+          <summary>Як замовити гайд?</summary>
+          <p>
+            Оберіть гру з каталогу та формат гайда, заповніть форму замовлення,
+            виберіть спосіб оплати й сповіщення та перейдіть до оплати. Після
+            оформлення замовлення гайд буде надіслано на вказану електронну
+            пошту.
+          </p>
+        </details>
+      </section>
+    </main>
+    <footer>
+      <h2>Контакти</h2>
+      <p>
+        <a href="mailto:info@soullib.com">info@soullib.com</a>
+      </p>
+      <nav>
+        <h3>Ми в соціальних мережах</h3>
+        <ul>
+          <li>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Facebook</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >YouTube</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <nav>
+        <h3>Навігація</h3>
+        <ul>
+          <li><a href="#home">Головна</a></li>
+          <li><a href="#features">Що всередині</a></li>
+          <li><a href="#catalog">Каталог</a></li>
+          <li><a href="#pricing">Ціни</a></li>
+          <li><a href="#order">Замовити гайд</a></li>
+          <li><a href="#faq">Часті запитання</a></li>
+        </ul>
+      </nav>
+      <p>&copy; 2026 SoulLib. Усі права захищені.</p>
+    </footer>
+  </body>
+</html>
