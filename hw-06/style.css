@@ -1,0 +1,20 @@
+body {
+  background-color: #f5efe6;
+  color: #333333;
+  font-family: 'Montserrat', sans-serif;
+}
+header {
+  background-color: #e8dfca;
+}
+button {
+  background-color: #7895b2;
+}
+p {
+  font-weight: 400;
+}
+h1 {
+  font-weight: 700;
+}
+h2 {
+  font-weight: 600;
+}
