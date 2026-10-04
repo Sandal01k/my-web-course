@@ -28,7 +28,7 @@ a:hover {
 /* Кнопки */
 button {
   background-color: #7895b2;
-  color: #333333;
+  color: #fff;
   border: none;
   padding: 10px 18px;
   border-radius: 10px;
@@ -39,6 +39,7 @@ button {
 
 button:hover {
   background-color: #aebdca;
+  color: #333333;
 }
 
 /* Параграфи */
@@ -51,7 +52,7 @@ p {
 /* Заголовки */
 h1 {
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 h2 {
@@ -74,7 +75,8 @@ h3 {
 
 /* Секції */
 header {
-  background-color: #e8dfca;
+  background-color: #7895b2;
+  color: #fff;
   border: none;
   border-radius: 15px;
   max-width: 1100px;
@@ -130,12 +132,16 @@ nav.nav-sticky {
 nav ul,
 .social ul {
   display: flex;
-  justify-content: space-between;
   list-style: none;
   padding: 0;
   margin: 0;
 }
-
+nav ul {
+  justify-content: space-between;
+}
+.social ul {
+  justify-content: left;
+}
 nav a:link,
 nav a:visited {
   color: #333333;
