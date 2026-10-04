@@ -4,24 +4,27 @@
 *::after {
   box-sizing: border-box;
 }
+
 body {
   background-color: #f5efe6;
   color: #333333;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
-  font-weight: normal;
   letter-spacing: -0.5px;
   line-height: 1.6;
   margin: 0;
 }
+
 /* Посилання */
 a:link {
-  text-decoration: none;
   color: #234c6a;
+  text-decoration: none;
 }
+
 a:hover {
   text-decoration: underline;
 }
+
 /* Кнопки */
 button {
   background-color: #7895b2;
@@ -37,27 +40,30 @@ button {
 button:hover {
   background-color: #aebdca;
 }
+
 /* Параграфи */
 p {
-  font-weight: 400;
   word-spacing: 1px;
-  /* max-width: 65ch; */
   margin-bottom: 1rem;
   padding: 5px 10px;
 }
+
 /* Заголовки */
 h1 {
   font-weight: 700;
   font-size: 2.5rem;
 }
+
 h2 {
   font-weight: 600;
   font-size: 2rem;
 }
+
 h3 {
   font-weight: 600;
   font-size: 1.5rem;
 }
+
 h1,
 h2,
 h3 {
@@ -65,15 +71,21 @@ h3 {
   padding: 5px 10px;
   letter-spacing: 1px;
 }
+
 /* Секції */
 header {
-  background-color: #7895b2;
+  background-color: #aebdca;
   border: none;
   border-radius: 15px;
   max-width: 1100px;
   margin: 0 auto;
   padding: 5px 10px;
+  display: flex;
+  min-height: 250px;
+  justify-content: center;
+  align-items: center;
 }
+
 main {
   background-color: #e8dfca;
   border: none;
@@ -82,18 +94,21 @@ main {
   margin: 0 auto;
   padding: 5px 10px 5px 15px;
 }
+
 section {
   padding: 2rem 0;
 }
+
 footer {
+  background-color: #aebdca;
   border: none;
   border-radius: 15px;
-  background-color: #aebdca;
   text-align: left;
   max-width: 1100px;
   margin: 0 auto;
   padding: 5px 10px 5px 15px;
 }
+
 /* Навігація */
 nav {
   background-color: #7895b2;
@@ -103,10 +118,15 @@ nav {
   margin: 20px 0;
   padding: 10px 15px;
 }
-.social {
-  background-color: #aebdca;
-  border: none;
+
+nav.nav-sticky {
+  position: sticky;
+  top: 0;
+  max-width: 1100px;
+  margin: 20px auto;
 }
+
+nav ul,
 .social ul {
   display: flex;
   justify-content: space-between;
@@ -114,18 +134,22 @@ nav {
   padding: 0;
   margin: 0;
 }
-nav ul {
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-nav a {
+
+nav a:link,
+nav a:visited {
+  color: #333333;
   border: 1px solid #7895b2;
   border-radius: 10px;
   padding: 8px 12px;
+  font-weight: 700;
+  word-spacing: 1px;
 }
+
+.social {
+  background-color: #aebdca;
+  border: none;
+}
+
 /* Зображення */
 img {
   display: block;
@@ -133,6 +157,7 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 /* Таблиці */
 table {
   width: 100%;
@@ -141,21 +166,25 @@ table {
   padding: 10px;
   margin: 0 auto;
 }
+
 caption {
   text-align: center;
   font-size: 1.25rem;
   font-weight: 600;
   padding: 10px 0 0 0;
 }
+
 td,
 th {
   padding: 10px;
   background-color: #aebdca;
   text-align: center;
 }
+
 tfoot td {
   background-color: #e8dfca;
 }
+
 /* Форми введення */
 form {
   max-width: 600px;
@@ -187,15 +216,18 @@ form input[type='radio'],
 form input[type='checkbox'] {
   width: auto;
 }
+
 /* Селектори класів */
 .title {
   text-align: center;
   font-size: 1.5rem;
   letter-spacing: 1px;
 }
+
 .copyright {
   text-align: center;
 }
+
 .small,
 .copyright {
   font-size: 0.875rem;
@@ -205,6 +237,7 @@ form input[type='checkbox'] {
   padding: 10px;
   margin: 10px;
 }
+
 /* Селектор id */
 #pricing {
   border: solid 2px #7895b2;
