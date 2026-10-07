@@ -163,7 +163,6 @@ img {
   margin: 0 auto;
   max-width: 100%;
   height: auto;
-  position: relative;
 }
 
 /* Таблиці */
@@ -172,7 +171,6 @@ table {
   border: none;
   border-spacing: 20px;
   padding: 10px;
-  margin: 0 auto;
 }
 
 caption {
@@ -229,9 +227,6 @@ form input[type='checkbox'] {
 
 .copyright {
   text-align: center;
-}
-
-.copyright {
   font-size: 0.875rem;
 }
 
@@ -244,4 +239,29 @@ form input[type='checkbox'] {
 #pricing {
   border: solid 2px #7895b2;
   border-radius: 15px;
+}
+.top {
+  font-size: 2rem;
+  font-weight: 600;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #4a6580;
+  text-align: center;
+  line-height: 40px;
+  text-decoration: none;
+}
+
+a.top,
+a.top:visited {
+  color: #fff;
+}
+
+a.top:hover {
+  background: #aebdca;
+  color: #fff;
+  text-decoration: none;
 }
