@@ -27,7 +27,7 @@ a:hover {
 
 /* Кнопки */
 button {
-  background-color: #7895b2;
+  background-color: #4a6580;
   color: #fff;
   border: none;
   padding: 10px 18px;
@@ -240,6 +240,7 @@ form input[type='checkbox'] {
   border: solid 2px #7895b2;
   border-radius: 15px;
 }
+/* Кнопка "Вгору" */
 .top {
   font-size: 2rem;
   font-weight: 600;
