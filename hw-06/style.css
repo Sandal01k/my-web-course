@@ -140,7 +140,7 @@ nav ul {
   flex-wrap: wrap;
 }
 .social ul {
-  justify-content: left;
+  justify-content: flex-start;
 }
 nav a:link,
 nav a:visited {
