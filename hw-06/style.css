@@ -125,7 +125,6 @@ nav.nav-sticky {
   position: sticky;
   top: 0;
   margin: 20px auto;
-  flex-wrap: wrap;
   z-index: 1000;
 }
 
@@ -138,6 +137,7 @@ nav ul,
 }
 nav ul {
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .social ul {
   justify-content: left;
