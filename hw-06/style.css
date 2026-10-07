@@ -17,14 +17,24 @@ body {
 
 /* Посилання */
 a:link {
-  color: #333;
-  text-decoration: none;
-}
-
-a:hover {
+  color: #1f3a54;
   text-decoration: underline;
 }
 
+a:visited {
+  color: #4b2f6b;
+  text-decoration: underline;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+}
+
+a:active {
+  color: #000;
+}
 /* Кнопки */
 button {
   background-color: #4a6580;
@@ -144,14 +154,24 @@ nav ul {
 }
 nav a:link,
 nav a:visited {
+  display: inline-block;
   color: #333333;
+  text-decoration: none;
   border: none;
   border-radius: 10px;
   padding: 8px 12px;
   font-weight: 700;
   word-spacing: 1px;
+  transition:
+    transform 0.2s,
+    background-color 0.2s;
 }
 
+nav a:hover,
+nav a:focus {
+  transform: scale(1.1);
+  background-color: #8fa4b8;
+}
 .social {
   background-color: #aebdca;
   border: none;
@@ -250,19 +270,21 @@ form input[type='checkbox'] {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: #4a6580;
+  background: hsl(42, 39%, 50%);
   text-align: center;
   line-height: 40px;
   text-decoration: none;
+  z-index: 1100;
 }
 
-a.top,
+a.top:link,
 a.top:visited {
   color: #fff;
+  text-decoration: none;
 }
 
 a.top:hover {
-  background: #aebdca;
+  background: hsl(42, 39%, 65%);
   color: #fff;
   text-decoration: none;
 }
