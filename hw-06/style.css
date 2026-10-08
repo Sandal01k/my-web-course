@@ -255,8 +255,9 @@ form input[type='checkbox'] {
 
 /* Селектор id */
 #pricing {
-  border: solid 2px #7895b2;
-  border-radius: 15px;
+  border: 2px solid var(--color-blue);
+  border-radius: var(--radius);
+  padding: var(--pad);
 }
 /* Кнопка "Вгору" */
 .top {
