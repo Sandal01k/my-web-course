@@ -1,3 +1,17 @@
+/* Змінні */
+:root {
+  --color-bg: #f5efe6;
+  --color-text: #333333;
+  --color-sand: #e8dfca;
+  --color-blue: #7895b2;
+  --color-blue-light: #aebdca;
+  --color-blue-dark: #4a6580;
+
+  --radius: 15px;
+  --max-width: 1100px;
+  --pad: 1.25rem; /* відступ усередині великих блоків */
+  --pad-small: 0.75rem; /* відступ усередині дрібних елементів */
+}
 /* Основне */
 *,
 *::before,
@@ -6,12 +20,13 @@
 }
 
 body {
-  background-color: #f5efe6;
-  color: #333333;
+  background-color: var(--color-bg);
+  color: var(--color-text);
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   line-height: 1.6;
   margin: 0;
+  padding: var(--pad);
 }
 
 /* Посилання */
