@@ -193,27 +193,25 @@ img {
 /* Таблиці */
 table {
   width: 100%;
-  border: none;
-  border-spacing: 20px;
-  padding: 10px;
+  border-spacing: 1rem;
 }
 
 caption {
   text-align: center;
   font-size: 1.25rem;
   font-weight: 600;
-  padding: 10px 0 0 0;
+  padding-top: 10px;
 }
 
 td,
 th {
-  padding: 10px;
-  background-color: #aebdca;
+  padding: var(--pad-small);
+  background-color: var(--color-blue-light);
   text-align: center;
 }
 
 tfoot td {
-  background-color: #e8dfca;
+  background-color: var(--color-sand);
 }
 
 /* Форми введення */
