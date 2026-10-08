@@ -277,13 +277,14 @@ form input[type='checkbox'] {
 }
 
 a.top:link,
-a.top:visited {
+a.top:visited,
+a.top:hover,
+a.top:focus {
   color: #fff;
   text-decoration: none;
 }
 
-a.top:hover {
+a.top:hover,
+a.top:focus {
   background: hsl(42, 39%, 50%);
-  color: #fff;
-  text-decoration: none;
 }
