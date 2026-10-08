@@ -253,11 +253,6 @@ form input[type='checkbox'] {
   font-size: 0.875rem;
 }
 
-.faq {
-  padding: 10px;
-  margin: 10px;
-}
-
 /* Селектор id */
 #pricing {
   border: solid 2px #7895b2;
