@@ -37,12 +37,10 @@ a:link {
 
 a:visited {
   color: #4b2f6b;
-  text-decoration: underline;
 }
 
 a:hover,
 a:focus {
-  text-decoration: underline;
   text-decoration-thickness: 3px;
 }
 
