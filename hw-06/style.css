@@ -49,19 +49,22 @@ a:active {
 }
 /* Кнопки */
 button {
-  background-color: #4a6580;
+  background-color: var(--color-blue-dark);
   color: #fff;
   border: none;
   padding: 10px 18px;
   border-radius: 10px;
   font: inherit;
   cursor: pointer;
-  transition: 0.2s;
+  transition:
+    background-color 0.2s,
+    color 0.2s;
 }
 
-button:hover {
-  background-color: #aebdca;
-  color: #333333;
+button:hover,
+button:focus-visible {
+  background-color: var(--color-blue-light);
+  color: var(--color-text);
 }
 
 /* Параграфи */
