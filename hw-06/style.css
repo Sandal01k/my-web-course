@@ -111,7 +111,9 @@ footer {
   padding: var(--pad);
   border-radius: var(--radius);
 }
-
+.nav-sticky {
+  padding: 0.5rem var(--pad);
+}
 header {
   background-color: var(--color-blue);
   color: #fff;
