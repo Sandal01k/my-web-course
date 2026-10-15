@@ -196,6 +196,9 @@ img {
 }
 
 /* Таблиці */
+.table-wrap {
+  overflow-x: auto;
+}
 table {
   width: 100%;
   border-spacing: 1rem;
