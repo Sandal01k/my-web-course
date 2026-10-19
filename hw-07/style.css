@@ -81,3 +81,63 @@ footer a:active,
 .top-button:active {
   transform: scale(1);
 }
+/* HERO + ABOUT (спільний фон) */
+.hero,
+.about {
+  background-color: #0b0b0d;
+  background-image: url('./images/hero.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding: 3rem 2rem;
+}
+
+/* напівпрозора темна плашка під текстом для контрастності */
+.hero__info,
+.about__content {
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.65);
+  border-radius: 0.5rem;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* hero */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.hero__info {
+  max-width: 33rem;
+}
+.hero__info h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  text-transform: uppercase;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+.hero__info p {
+  font-size: 1.125rem;
+}
+.hero__cards {
+  display: flex;
+  align-items: flex-start;
+  align-self: flex-start;
+  gap: 1rem;
+}
+.hero__cards .card {
+  width: 13rem;
+}
+.hero__cards .card--sm {
+  width: 11rem;
+}
+
+/* About */
+.about__content {
+  max-width: 50rem;
+}
+.about__content h2 {
+  margin-bottom: 1rem;
+}
