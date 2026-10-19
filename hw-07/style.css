@@ -210,3 +210,77 @@ footer a:active,
   flex-direction: column;
   gap: 0.5rem;
 }
+/* Панель вибору кольору на картці */
+.card__colors {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.swatch {
+  position: relative;
+  cursor: pointer;
+}
+
+.swatch input {
+  position: absolute;
+  opacity: 0;
+}
+
+/* самі кружечки */
+.swatch__dot {
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+.swatch__dot--black {
+  background: #212121;
+}
+.swatch__dot--blue {
+  background: #1e88e5;
+}
+.swatch__dot--beige {
+  background: #d7b98e;
+}
+
+/* позначка вибору: біле кільце + темне кільце зовні */
+.swatch input:checked + .swatch__dot {
+  box-shadow:
+    0 0 0 2px #fff,
+    0 0 0 4px #333;
+}
+
+/* для навігації клавішею Tab */
+.swatch input:focus-visible + .swatch__dot {
+  outline: 2px solid #1e88e5;
+  outline-offset: 4px;
+}
+
+.card__more-colors {
+  font-size: 0.875rem;
+  color: #777;
+}
+.card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+.card__btn {
+  padding: 0.5rem 1rem;
+  border: 2px solid transparent;
+  border-radius: 50px;
+  background: #000;
+  color: #fff;
+  font-size: 1rem;
+  transition: 0.4s;
+  cursor: pointer;
+}
+/* Сітка карток */
+.product-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  padding: 2rem;
+}
