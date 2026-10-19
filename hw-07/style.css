@@ -97,9 +97,13 @@ footer a {
 
 /* Неонова підсвітка для всіх інтерактивних елементів */
 header nav a:hover,
+header nav a:focus-visible,
 footer a:hover,
+footer a:focus-visible,
 .card__btn:hover,
-.top-button:hover {
+.card__btn:focus-visible,
+.top-button:hover,
+.top-button:focus-visible {
   border-color: #ff00ff;
   box-shadow:
     0 0 15px #ff00ff,
