@@ -20,14 +20,13 @@
         />
       </symbol>
     </svg>
-    <a href="#" class="top-button" aria-label="Нагору">↑</a>
     <header>
       <span class="logo">Logo</span>
       <nav class="sticky-nav">
         <ul>
-          <li><a href="#">Послуги</a></li>
-          <li><a href="#">Про нас</a></li>
-          <li><a href="#">Контакти</a></li>
+          <li><a href="#cards">Картки</a></li>
+          <li><a href="#about">Про нас</a></li>
+          <li><a href="#contacts">Контакти</a></li>
           <li><a href="#">Блог</a></li>
         </ul>
       </nav>
@@ -40,6 +39,137 @@
             Lorem ipsum dolor sit amet consectetur, adipisicing elit.
             Laboriosam, sed.
           </p>
+        </div>
+        <div class="hero__cards">
+          <h2 class="visually-hidden">Новинки та акції</h2>
+          <!-- Картка NEW (копія для hero) -->
+          <article class="card">
+            <div class="card__media">
+              <img
+                class="card__img"
+                src="./images/purple.png"
+                alt="Опис товару"
+              />
+              <span class="card__badge card__badge--new">NEW</span>
+              <button
+                class="card__like"
+                type="button"
+                aria-label="Додати в обране"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  width="20"
+                  height="20"
+                  aria-hidden="true"
+                >
+                  <use href="#icon-heart" />
+                </svg>
+              </button>
+            </div>
+            <div class="card__body">
+              <div class="card__colors" role="radiogroup" aria-label="Колір">
+                <label class="swatch">
+                  <input
+                    type="radio"
+                    name="color-1"
+                    value="black"
+                    aria-label="Чорний"
+                    checked
+                  />
+                  <span class="swatch__dot swatch__dot--black"></span>
+                </label>
+                <label class="swatch">
+                  <input
+                    type="radio"
+                    name="color-1"
+                    value="blue"
+                    aria-label="Синій"
+                  />
+                  <span class="swatch__dot swatch__dot--blue"></span>
+                </label>
+                <label class="swatch">
+                  <input
+                    type="radio"
+                    name="color-1"
+                    value="beige"
+                    aria-label="Бежевий"
+                  />
+                  <span class="swatch__dot swatch__dot--beige"></span>
+                </label>
+              </div>
+              <span class="card__more-colors">+7 кольорів</span>
+              <h3 class="card__title">Назва товару</h3>
+              <p class="card__rating">★★★★☆</p>
+              <div class="card__footer">
+                <span class="card__price">$49</span>
+                <button class="card__btn" type="button">Купити</button>
+              </div>
+            </div>
+          </article>
+          <!-- Картка -20% (копія для hero, менша) -->
+          <article class="card card--sm">
+            <div class="card__media">
+              <img
+                class="card__img"
+                src="./images/cart.png"
+                alt="Опис товару"
+              />
+              <span class="card__badge card__badge--sale">-20%</span>
+              <button
+                class="card__like"
+                type="button"
+                aria-label="Додати в обране"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  width="20"
+                  height="20"
+                  aria-hidden="true"
+                >
+                  <use href="#icon-heart" />
+                </svg>
+              </button>
+            </div>
+            <div class="card__body">
+              <div class="card__colors" role="radiogroup" aria-label="Колір">
+                <label class="swatch">
+                  <input
+                    type="radio"
+                    name="color-2"
+                    value="black"
+                    aria-label="Чорний"
+                    checked
+                  />
+                  <span class="swatch__dot swatch__dot--black"></span>
+                </label>
+                <label class="swatch">
+                  <input
+                    type="radio"
+                    name="color-2"
+                    value="blue"
+                    aria-label="Синій"
+                  />
+                  <span class="swatch__dot swatch__dot--blue"></span>
+                </label>
+                <label class="swatch">
+                  <input
+                    type="radio"
+                    name="color-2"
+                    value="beige"
+                    aria-label="Бежевий"
+                  />
+                  <span class="swatch__dot swatch__dot--beige"></span>
+                </label>
+              </div>
+              <span class="card__more-colors">+7 кольорів</span>
+              <h3 class="card__title">Назва товару</h3>
+              <p class="card__rating">★★★★☆</p>
+              <div class="card__footer">
+                <span class="card__price">$49</span>
+                <button class="card__btn" type="button">Купити</button>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
       <section class="product-cards" id="cards">
@@ -569,6 +699,44 @@
         </div>
       </section>
     </main>
-    <footer>Контакти</footer>
+    <footer id="contacts">
+      <h2>Контакти</h2>
+      <p>
+        <a class="footer__mail" href="mailto:ProductCards@mail.com"
+          >ProductCards@mail.com</a
+        >
+      </p>
+      <nav class="social">
+        <h3>Ми в соціальних мережах</h3>
+        <ul>
+          <li>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Facebook</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >YouTube</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <p class="copyright">&copy; 2026 Product Cards. Усі права захищені.</p>
+    </footer>
+    <a href="#" class="top-button" aria-label="Нагору">↑</a>
   </body>
 </html>
