@@ -92,7 +92,7 @@ footer a {
   font-size: 1.125rem;
   font-weight: 600;
   text-decoration: none;
-  transition: 0.4s;
+  transition: 0.4s ease;
 }
 
 /* Неонова підсвітка для всіх інтерактивних елементів */
@@ -302,6 +302,7 @@ footer a:active,
   gap: 0.5rem;
 }
 .card__btn {
+  font: inherit;
   padding: 0.5rem 1rem;
   border: 2px solid transparent;
   border-radius: 50px;
@@ -323,7 +324,6 @@ footer a:active,
 /* Футер */
 footer {
   background: #a09fa3f2;
-  box-shadow: 0 6px 8px -6px rgba(0, 0, 0, 0.4);
   padding: 2rem;
   display: flex;
   flex-direction: column;
