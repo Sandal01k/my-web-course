@@ -284,3 +284,36 @@ footer a:active,
   gap: 1.5rem;
   padding: 2rem;
 }
+/* Футер */
+footer {
+  background: #a09fa3f2;
+  box-shadow: 0 6px 8px -6px rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.social ul {
+  justify-content: center;
+}
+
+/* e-mail: фон + кругла рамка (ефект наведення спільний, додав вище) */
+.footer__mail {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: #000;
+}
+
+.copyright {
+  width: 100%;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+  font-size: 0.875rem;
+}
