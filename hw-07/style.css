@@ -141,3 +141,53 @@ footer a:active,
 .about__content h2 {
   margin-bottom: 1rem;
 }
+/* Стилізація карток */
+.card {
+  background: #fff;
+  border: 1px solid #ccc;
+  color: black;
+  position: relative;
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: scale(1.05);
+  z-index: 1;
+}
+.card__img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+.card__media {
+  position: relative;
+}
+.card__badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: 0.3rem;
+  color: white;
+}
+.card__badge--sale {
+  background-color: red;
+}
+.card__badge--new {
+  background-color: green;
+}
+.card__like {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 2.5rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+}
