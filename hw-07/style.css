@@ -191,3 +191,22 @@ footer a:active,
   background: #fff;
   cursor: pointer;
 }
+/* Стилізація іконки сердечка */
+.card__like svg {
+  fill: none;
+  stroke: #333;
+  stroke-width: 2;
+  transition:
+    fill 0.2s,
+    stroke 0.2s;
+}
+.card__like:hover svg {
+  fill: #e53935;
+  stroke: #e53935;
+}
+.card__body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
