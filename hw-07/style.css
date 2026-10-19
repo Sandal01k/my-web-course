@@ -381,3 +381,23 @@ footer {
   text-decoration: none;
   transition: 0.4s;
 }
+
+/* Адаптивність */
+
+/* планшет: hero стає в колонку, карток по 2 в ряд */
+@media (max-width: 56rem) {
+  .hero {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .hero__info {
+    max-width: none;
+  }
+  .hero__cards {
+    align-self: auto;
+    justify-content: center;
+  }
+  .product-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
