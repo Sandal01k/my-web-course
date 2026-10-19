@@ -41,3 +41,27 @@ header .logo {
   font-weight: 800;
   line-height: 1.2;
 }
+/* Посилання меню */
+header nav ul,
+.social ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+header nav ul li,
+.social ul li {
+  padding: 0.25rem;
+}
+header nav a,
+footer a {
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  border: 2px solid transparent;
+  border-radius: 50px;
+  color: #000;
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.4s;
+}
