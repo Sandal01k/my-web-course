@@ -177,7 +177,7 @@ footer a:active,
 .card {
   background: #fff;
   border: 1px solid #ccc;
-  color: black;
+  color: #000;
   position: relative;
   transition: transform 0.3s;
 }
@@ -199,7 +199,7 @@ footer a:active,
   top: 1rem;
   left: 1rem;
   padding: 0.3rem;
-  color: white;
+  color: #fff;
 }
 .card__badge--sale {
   background-color: #d32f2f;
@@ -375,7 +375,7 @@ footer {
 
   /* Оформлення */
   background-color: #1e2023;
-  color: white;
+  color: #fff;
   font-size: 1.5rem;
   font-weight: 800;
   text-decoration: none;
