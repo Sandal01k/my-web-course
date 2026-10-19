@@ -20,3 +20,17 @@ h2 {
 h3 {
   font-weight: 600;
 }
+/* Шапка */
+header {
+  background: #a09fa3f2;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 6px 8px -6px rgba(0, 0, 0, 0.4);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+}
