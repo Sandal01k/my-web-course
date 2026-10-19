@@ -401,3 +401,50 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+/* телефон: шапка в колонку, картки по одній */
+@media (max-width: 37.5rem) {
+  html {
+    scroll-padding-top: 7rem;
+  }
+  header {
+    flex-direction: column;
+    padding: 0.75rem 1rem;
+  }
+  header .logo {
+    font-size: 1.5rem;
+  }
+  header nav ul {
+    justify-content: center;
+  }
+  header nav ul li {
+    padding: 0;
+  }
+  header nav a,
+  footer a {
+    font-size: 1rem;
+    padding: 0.375rem 0.625rem;
+  }
+
+  .hero,
+  .about {
+    padding: 2rem 1rem;
+  }
+  .hero__cards {
+    gap: 0.75rem;
+  }
+  .hero__cards .card,
+  .hero__cards .card--sm {
+    flex: 1 1 0;
+    width: auto;
+    min-width: 0;
+  }
+
+  .product-cards {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+  footer {
+    padding: 1.5rem 1rem;
+  }
+}
