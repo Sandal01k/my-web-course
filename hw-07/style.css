@@ -65,3 +65,19 @@ footer a {
   text-decoration: none;
   transition: 0.4s;
 }
+/* Неонова підсвітка для всіх інтерактивних елементів */
+header nav a:hover,
+footer a:hover,
+.card__btn:hover,
+.top-button:hover {
+  border-color: #ff00ff;
+  box-shadow:
+    0 0 15px #ff00ff,
+    0 0 30px #00ffff;
+  transform: translateY(-2px);
+}
+header nav a:active,
+footer a:active,
+.top-button:active {
+  transform: scale(1);
+}
