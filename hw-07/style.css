@@ -319,12 +319,16 @@ footer a:active,
 
 /* Сітка карток */
 .product-cards {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 76rem;
+  gap: 1rem;
   padding: 2rem;
+  margin-inline: auto;
 }
-
+.product-cards .card {
+  flex: 1 1 17rem;
+}
 /* Футер */
 footer {
   background: #a09fa3f2;
@@ -388,7 +392,7 @@ footer {
 
 /* Адаптивність */
 
-/* планшет: hero стає в колонку, карток по 2 в ряд */
+/* планшет */
 @media (max-width: 56rem) {
   .hero {
     flex-direction: column;
@@ -401,12 +405,9 @@ footer {
     align-self: auto;
     justify-content: center;
   }
-  .product-cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 
-/* телефон: шапка в колонку, картки по одній */
+/* телефон */
 @media (max-width: 37.5rem) {
   html {
     scroll-padding-top: 7rem;
@@ -445,7 +446,6 @@ footer {
   }
 
   .product-cards {
-    grid-template-columns: 1fr;
     padding: 1rem;
   }
   footer {
