@@ -13,34 +13,40 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <div class="logo">traine.me</div>
-      <div class="menu">
-        <ul>
-          <li class="active">Home</li>
-          <li>About</li>
-          <li>Training</li>
-        </ul>
-      </div>
-    </header>
-    <main>
-      <div class="hero_text">
-        <h1>workouts made exclusive for you!</h1>
-        <p>
-          We create exclusive and unique workouts for you. Invest in your body
-          and get much more performance and quality of life.
-        </p>
-        <span class="cta_btn"><button class="btn">Start now</button></span>
-      </div>
-      <div class="hero_img">
-        <img
-          src="images/hero-illustration.png"
-          alt="Дівчина, що тренується"
-          height=""
-          width=""
-        />
-      </div>
-    </main>
-    <footer><p>send us a message @treine.me</p></footer>
+    <div class="wrapper">
+      <header class="container">
+        <div class="logo">traine.me</div>
+        <div class="menu">
+          <ul>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Training</a></li>
+          </ul>
+        </div>
+      </header>
+      <main class="container">
+        <div class="hero_text">
+          <h1>workouts made <span class="accent">exclusive</span> for you!</h1>
+          <p>
+            We create <strong>exclusive and unique workouts</strong> for you.
+            Invest in your body and
+            <strong>get much more performance</strong> and quality of life.
+          </p>
+          <button class="btn">&#9742;Start now</button>
+        </div>
+        <div class="hero_img">
+          <img
+            src="images/hero-illustration.png"
+            alt="Дівчина, що тренується"
+            height=""
+            width=""
+          />
+        </div>
+      </main>
+      <footer class="container">
+        <p>send us a message @treine.me</p>
+        <div class="dots"></div>
+      </footer>
+    </div>
   </body>
 </html>
