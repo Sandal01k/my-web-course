@@ -69,10 +69,13 @@ header {
   justify-content: space-between;
 }
 
+/* лого */
 header .logo {
   font-size: 1.375rem;
   line-height: 1.2;
 }
+
+/* меню */
 header nav {
   width: 50%;
 }
@@ -85,9 +88,8 @@ header nav ul {
 header nav ul li {
   cursor: pointer;
 }
-header nav ul li.active a {
-  font-weight: bold;
-}
+
+/* Ефект наведення на посилання */
 header nav ul li a {
   color: var(--color-menu);
   font-weight: 400;
@@ -110,8 +112,50 @@ header nav ul li:not(.active) a::after {
 header nav ul li a:hover::after {
   transform: scaleX(1);
 }
-main h1 {
+
+/* Виділення активної сторінки жирним шрифтом */
+header nav ul li.active a {
+  font-weight: bold;
+}
+
+/* ============================================================= */
+
+/* hero */
+
+/* Розміщення елементів */
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Текст hero-секції */
+.hero-text {
+  flex: 0 0 30rem;
+}
+.hero-text h1 {
   font-size: 3rem;
   line-height: 150%;
   text-transform: uppercase;
+}
+.hero-text p {
+  max-width: 27rem;
+  line-height: 160%;
+  margin: 2rem 0;
+  color: var(--color-text-light);
+}
+
+/* cta-кнопка */
+.hero-text .btn {
+  background: var(--color-bg);
+  color: var(--color-btn);
+  font-size: 1rem;
+  border: 0;
+  border-radius: 0.25rem;
+  padding: 1rem 2rem;
+  transition: transform 0.5s ease;
+}
+.hero-text .btn:hover,
+.hero-text .btn:focus-visible {
+  transform: scale(1.1);
 }
